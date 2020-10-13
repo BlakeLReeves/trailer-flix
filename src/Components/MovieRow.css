@@ -1,0 +1,35 @@
+.container {
+  color: white;
+  margin-left: 1.25em;
+}
+
+.movie-rows {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 1.5em;
+}
+
+.movie-rows::-webkit-scrollbar {
+  display: none;
+}
+
+.movie {
+  object-fit: contain;
+  width: 100%;
+  max-height: 7em;
+  margin-right: 1em;
+  transition: transform 450ms;
+}
+
+.movie:hover {
+  transform: scale(1.1);
+}
+
+.movie-isPoster {
+  max-height: 15em;
+}
+
+.movie-isPoster:hover {
+  transform: scale(1.1);
+}
